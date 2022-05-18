@@ -1,0 +1,68 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.dropdown {
+  display: none;
+}
+.text-blue {
+  color: #337ab7;
+}
+.bg-blue {
+  background-color: #337ab7;
+}
+.hero-img {
+  margin-left: 200px;
+  margin-top: -100px;
+}
+
+/* About Section */
+#about {
+  padding: 200px 0;
+  background-color: lightblue;
+}
+#about h1 {
+  font-family: "Macondo", cursive;
+  margin-top: 20px;
+}
+.about-right {
+  margin-top: 80px;
+}
+.about-right a {
+  margin: auto 10px;
+}
+.about-right a svg:hover {
+  transform: scale(2);
+  transition: all 0.9s ease-in-out;
+}
+
+/* Project */
+#project {
+  padding-top: 100px;
+}
+#project .card img:hover {
+  transform: scale(1.2);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.card {
+  border: none !important;
+  margin: auto;
+}
+@media (max-width: 991.98px) {
+  .dropdown {
+    display: block !important;
+  }
+  .hero-text {
+    margin-top: 50px;
+  }
+  .hero-img {
+    margin-left: 0;
+  }
+  .about-left {
+    margin-top: 20px;
+  }
+  .about-right {
+    margin-top: 20px;
+  }
+}
