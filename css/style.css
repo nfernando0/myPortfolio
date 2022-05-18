@@ -2,14 +2,22 @@
   font-family: "Poppins", sans-serif;
 }
 
+:root {
+  --primary-color: #92b4ec;
+  --secondary-color: #f7f7f7;
+}
+
 .dropdown {
   display: none;
 }
 .text-blue {
-  color: #337ab7;
+  color: var(--primary-color);
+}
+.text-secondary {
+  color: var(--secondary-color);
 }
 .bg-blue {
-  background-color: #337ab7;
+  background-color: var(--primary-color);
 }
 .hero-img {
   margin-left: 200px;
@@ -18,8 +26,8 @@
 
 /* About Section */
 #about {
-  padding: 200px 0;
-  background-color: lightblue;
+  padding: 150px 0;
+  background-color: var(--primary-color);
 }
 #about h1 {
   font-family: "Macondo", cursive;
@@ -48,6 +56,39 @@
 .card {
   border: none !important;
   margin: auto;
+}
+
+/* Contact */
+#contact {
+  padding: 50px 0;
+  background-color: var(--primary-color);
+}
+#contact .msg {
+  display: flex;
+  margin: 20px auto;
+  justify-content: center;
+}
+.contact-left {
+  max-width: 500px;
+  margin: auto;
+}
+.contact-left p {
+  text-align: center;
+  letter-spacing: 2px;
+}
+.btn-submit {
+  outline: var(--primary-color);
+  background-color: rgba(0, 0, 0, 0.1);
+  color: var(--secondary-color);
+  padding: 8px 25px;
+  border-radius: 5px;
+  margin: auto;
+  display: flex;
+  transition: all 0.3s ease-in-out;
+}
+.btn-submit:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 @media (max-width: 991.98px) {
   .dropdown {
