@@ -1,0 +1,128 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary-color: #92b4ec;
+  --secondary-color: #f7f7f7;
+}
+
+.dropdown {
+  display: none;
+}
+.text-blue {
+  color: var(--primary-color);
+}
+.text-secondary {
+  color: var(--secondary-color);
+}
+.bg-blue {
+  background-color: var(--primary-color);
+}
+.hero-img img {
+  width: 270px;
+}
+.hero-img {
+  width: 180px;
+  margin-left: 200px;
+  /* margin-top: -100px; */
+}
+.dropdown li a {
+  color: #000 !important;
+}
+/* About Section */
+#about {
+  margin-top: -60px !important;
+  padding: 100px 0;
+  background-color: var(--primary-color);
+}
+#about h1 {
+  font-family: "Macondo", cursive;
+  margin-top: 20px;
+}
+.about-right {
+  margin-top: 80px;
+}
+.about-right a {
+  margin: auto 10px;
+}
+.about-right a svg:hover {
+  transform: scale(2);
+  transition: all 0.9s ease-in-out;
+}
+
+/* Project */
+#project {
+  padding-top: 100px;
+}
+#project .card img:hover {
+  transform: scale(1.2);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.card {
+  border: none !important;
+  margin: auto;
+}
+
+/* Contact */
+#contact {
+  padding: 80px 0;
+  background-color: var(--primary-color);
+}
+#contact .msg {
+  display: flex;
+  margin: 20px auto;
+  justify-content: center;
+}
+.contact-left {
+  max-width: 500px;
+  margin: auto;
+}
+.contact-left p {
+  text-align: center;
+  letter-spacing: 2px;
+}
+.btn-submit {
+  outline: var(--primary-color);
+  background-color: rgba(0, 0, 0, 0.1);
+  color: var(--secondary-color);
+  padding: 8px 25px;
+  border-radius: 5px;
+  margin: auto;
+  display: flex;
+  transition: all 0.3s ease-in-out;
+}
+.btn-submit:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+#footer {
+  padding: 10px 0;
+  color: #fff;
+  background-color: #000;
+}
+@media (max-width: 991.98px) {
+  .dropdown {
+    display: block !important;
+  }
+  .hero-text {
+    margin-top: 50px;
+  }
+  .hero-img {
+    /* margin-left: 0; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #about {
+    margin-top: 0 !important;
+  }
+  .about-left {
+    margin-top: 20px;
+  }
+  .about-right {
+    margin-top: 20px;
+  }
+}
